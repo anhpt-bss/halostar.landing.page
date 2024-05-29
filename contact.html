@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="AnhPT">
     <meta name="description" content="Liên Hệ | Halo Star | Lớp vẽ - Workshop đa chất liệu cho Trẻ em và Người lớn">
-    <meta name="keywords" content="lopvehalostar, Lớp Vẽ Halo Star, Lớp vẽ, Workshop đa chất liệu cho Trẻ em và Người lớn">
-  
+    <meta name="keywords"
+        content="lopvehalostar, Lớp Vẽ Halo Star, Lớp vẽ, Workshop đa chất liệu cho Trẻ em và Người lớn">
+
     <meta property="og:title" content="Liên Hệ">
-    <meta property="og:description" content="Liên Hệ | Halo Star | Lớp vẽ - Workshop đa chất liệu cho Trẻ em và Người lớn">
+    <meta property="og:description"
+        content="Liên Hệ | Halo Star | Lớp vẽ - Workshop đa chất liệu cho Trẻ em và Người lớn">
     <meta property="og:url" content="https://lopvehalostar.vn">
     <meta property="og:image" content="assets/media/favicon/logo.png">
-  
+
     <meta name="HandheldFriendly" content="true">
     <meta name="format-detection" content="telephone=no">
 
@@ -32,7 +34,6 @@
     <link rel="stylesheet" href="assets/vendor/jquery-magnific-popup/jquery.magnific-popup.css">
     <link rel="stylesheet" href="assets/vendor/animate/animate.min.css">
     <link rel="stylesheet" href="assets/vendor/odometer/odometer.min.css">
-    <link rel="stylesheet" href="assets/vendor/nice-select/nice-select.css">
     <link rel="stylesheet" href="assets/css/app.css">
 
 </head>
@@ -84,7 +85,7 @@
                         <div class="main-menu__left">
 
                             <div class="main-menu__logo">
-                                <a href="index.html">
+                                <a href="/">
                                     <img src="assets/media/logo.png" alt="Educate">
                                 </a>
                             </div>
@@ -92,7 +93,7 @@
                             <div class="main-menu__nav">
                                 <ul class="main-menu__list">
                                     <li class="dropdown">
-                                        <a href="index.html">Trang Chủ</a>
+                                        <a href="/">Trang Chủ</a>
                                     </li>
                                     <li><a href="about.html">Về Chúng Tôi</a></li>
                                     <li class="dropdown">
@@ -154,7 +155,7 @@
             <div class="container">
                 <div class="content">
                     <div class="title">
-                        <h1>Contact Us</h1>
+                        <h1>Liên Hệ</h1>
                         <img src="assets/media/shapes/tag-2.png" alt="" class="tag">
                     </div>
                     <div 1="" class="educate-tilt"
@@ -172,51 +173,67 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 mb-24 mb-lg-0">
-                        <h6 class="color-primary mb-8">–––– Contact Form</h6>
-                        <h2 class="mb-16">Write Us Anytime, We Would<br> Love To Hear From <span
-                                class="fm-sec">You!</span></h2>
-                        <p class="mb-32">Lorem ipsum dolor sit amet consectetur. Non convallis sed id <br>aliquam
-                            tempus. Volutpat tortor tincidunt egestas sit risus donec.</p>
-                        <form method="post" action="contact.html" class="contact-form form-validator">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="mb-24">
-                                        <input type="text" class="form-control p_lg" id="name" name="name" required=""
-                                            placeholder="First Name">
+                        <h6 class="color-primary mb-8">–––– Đăng Ký Học</h6>
+                        <h2 class="mb-16">Gửi thông tin đăng ký đến<span class="fm-sec">Halo Star!</span></h2>
+                        <p class="mb-32">
+                            Điền đầy đủ thông tin và gửi về cho chúng tôi.<br>
+                            <b>Halo Star</b> vui lòng tiếp nhận và sẽ phản hồi lại thông tin ngay đến bạn.<br>
+                            Xin cảm ơn!
+                        </p>
+                        <!-- Contact Form Area -->
+                        <div class="contact-form-area">
+                            <div id="success"></div>
+                            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <div class="row" data-uk-grid>
+
+                                    <div class="col-6 control-group mb-24">
+                                        <input class="form-control p_lg" type="text" id="name" placeholder="Tên Bạn"
+                                            required="required"
+                                            data-validation-required-message="Vui lòng nhập tên bạn">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+
+                                    <div class="col-6 control-group mb-24">
+                                        <input class="form-control p_lg" type="email" id="email"
+                                            placeholder="Email Của Bạn" required="required"
+                                            data-validation-required-message="Vui lòng nhập email">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+
+                                    <div class="col-6 control-group mb-24">
+                                        <input class="form-control p_lg" type="text" id="phoneNumber"
+                                            placeholder="Số điện thoại" required="required"
+                                            data-validation-required-message="Vui lòng nhập số điện thoại">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+
+                                    <div class="col-6 control-group mb-24">
+                                        <select class="form-control p_lg" id="course" required="required"
+                                            data-validation-required-message="Vui lòng chọn một khóa học">
+                                            <option value="" disabled selected>Chọn khóa học</option>
+                                            <option value="Lớp Little Star">Lớp Little Star (4-8t)</option>
+                                            <option value="Lớp Supper Star">Lớp Supper Star (8-12t)</option>
+                                        </select>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+
+                                    <div class="col-12 control-group mb-24">
+                                        <textarea class="form-control p_lg" id="message" placeholder="Tin Nhắn"
+                                            required="required"
+                                            data-validation-required-message="Vui lòng nhập tin nhắn"
+                                            rows="5"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+
+                                    <div class="col-12 text-end">
+                                        <button type="submit" class="educate-btn" id="sendMessageButton"><span
+                                                class="educate-btn__curve"></span>Gửi Thông Tin <i
+                                                class="fa fa-angle-double-right"></i></button>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="mb-24">
-                                        <input type="text" class="form-control p_lg" id="last-name" name="last-name"
-                                            required="" placeholder="Last Name">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="mb-24">
-                                        <input type="email" class="form-control p_lg" id="email" name="email"
-                                            required="" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="mb-24">
-                                        <input type="text" class="form-control p_lg" id="subject" name="subject"
-                                            required="" placeholder="Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-24">
-                                <textarea class="form-control p_lg" id="detail-message" name="message" rows="5"
-                                    required="" placeholder="Message"></textarea>
-                            </div>
-                            <div class="text-end">
-                                <button type="submit" class="educate-btn"><span class="educate-btn__curve"></span>Send
-                                    Message</button>
-                            </div>
-                            <!-- Alert Message -->
-                            <div id="message" class="alert-msg"></div>
-                        </form>
+                            </form>
+                        </div>
+
                     </div>
                     <div class="col-lg-6">
                         <div 1="" class="educate-tilt"
@@ -277,7 +294,7 @@
                     <div class="row">
                         <div class="col-xl-3 ">
                             <div class="footer_widget">
-                                <a href="index.html" class="mb-8"><img src="assets/media/logo.png" alt=""></a>
+                                <a href="/" class="mb-8"><img src="assets/media/logo.png" alt=""></a>
                                 <p class="description_text">Lorem ipsum dolor sit amet consectetur. Non convallis sed id
                                     aliquam tempus.
                                     Volutpat tortor tincidunt egestas sit risus donec.</p>
@@ -359,7 +376,7 @@
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/media/logo-light.png" alt="educate"></a>
+                <a href="/" aria-label="logo image"><img src="assets/media/logo-light.png" alt="educate"></a>
             </div>
             <div class="mobile-nav__container"></div>
             <ul class="mobile-nav__contact list-unstyled">
@@ -385,7 +402,7 @@
     <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>
         <div class="search-popup__content">
-            <form role="search" method="get" class="search-popup__form" action="index.html">
+            <form role="search" method="get" class="search-popup__form" action="/">
                 <input type="text" id="search" placeholder="Search Here...">
                 <button type="submit"><i class="fal fa-search"></i></button>
             </form>
@@ -403,6 +420,7 @@
 
     <!-- Jquery Js -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/popper.min.js"></script>
     <script src="assets/vendor/jquery/jquery-3.6.3.min.js"></script>
     <script src="assets/vendor/jquery-appear/jquery-appear.js"></script>
     <script src="assets/vendor/jquery-validator/jquery-validator.js"></script>
@@ -411,12 +429,15 @@
     <script src="assets/vendor/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="assets/vendor/slickslider/slick.min.js"></script>
     <script src="assets/vendor/tilt/tilt.jquery.js"></script>
-    <script src="assets/vendor/nice-select/jquery.nice-select.min.js"></script>
     <script src="assets/vendor/wow/wow.js"></script>
 
     <!-- Site Scripts -->
     <script src="assets/js/app.js"></script>
 
+    <!-- Email js -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="assets/vendor/mail/jqBootstrapValidation.min.js"></script>
+    <script src="assets/vendor/mail/contact.js"></script>
 
 </body>
 
