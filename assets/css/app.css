@@ -2750,6 +2750,9 @@ input[type=search]::-webkit-search-results-decoration {
   color: #fefcfb;
   transition: 500ms;
 }
+.mobile-nav__social a img {
+  width: 24px;
+}
 .mobile-nav__social a + a {
   margin-left: 20px;
 }
@@ -3448,9 +3451,9 @@ footer .copyright_row P {
 }
 .social_icons_list li {
   flex-shrink: 0;
-  padding: 9px;
-  background: #0aa6d7;
-  border-radius: 10px;
+}
+.social_icons_list li img {
+  width: 32px;
 }
 
 .social_icons_list_2 {

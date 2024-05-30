@@ -19,7 +19,7 @@ $(function () {
             var templateParams = {
                 from_email: email,
                 from_name: name,
-                to_email: "example@company.com",
+                to_email: "mydung13161316@gmail.com",
                 to_name: 'Halo Star',
                 phone_number: phoneNumber,
                 course: course,
