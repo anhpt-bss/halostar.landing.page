@@ -2374,11 +2374,12 @@ input[type=search]::-webkit-search-results-decoration {
 .main-menu .main-menu__left {
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 24px;
 }
 .main-menu .main-menu__left .main-menu__logo {
   align-items: center;
   position: relative;
+  width: 200px;
 }
 .main-menu .main-menu__left .main-menu__nav {
   margin-left: auto;
@@ -2619,7 +2620,7 @@ input[type=search]::-webkit-search-results-decoration {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 999;
+  z-index: 9999;
   transform: translateX(-100%);
   transform-origin: left center;
   transition: transform 500ms ease 500ms, visibility 500ms ease 500ms;
