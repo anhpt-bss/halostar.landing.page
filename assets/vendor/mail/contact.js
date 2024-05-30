@@ -19,14 +19,14 @@ $(function () {
             var templateParams = {
                 from_email: email,
                 from_name: name,
-                to_email: "halostar@outlook.com",
+                to_email: "example@company.com",
                 to_name: 'Halo Star',
                 phone_number: phoneNumber,
                 course: course,
                 message: message
             };
 
-            emailjs.send("service", "template", templateParams, 'P3Qm15fnmpdQlRhHb')
+            emailjs.send("service_2ys9so8", "template_tt5x23g", templateParams, 'XRZeTN_afesxiPnRR')
                 .then(function(response) {
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
