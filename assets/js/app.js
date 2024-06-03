@@ -295,10 +295,10 @@
           $(".top-coming").html(html);
           $(this).html(
             e.strftime(
-              "<li><h2>%D</h2><h6>Days</h6></li>\
-              <li><h2>%H</h2><h6>Hrs</h6></li>\
-              <li><h2>%M</h2><h6>Min</h6></li>\
-              <li><h2><span>%S</span></h2><h6>Sec</h6></li>"
+              "<li><h2>%D</h2><h6>Ngày</h6></li>\
+              <li><h2>%H</h2><h6>Giờ</h6></li>\
+              <li><h2>%M</h2><h6>Phút</h6></li>\
+              <li><h2><span>%S</span></h2><h6>Giây</h6></li>"
             )
           );
         });
