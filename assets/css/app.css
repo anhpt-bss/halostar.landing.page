@@ -3069,7 +3069,7 @@ footer .copyright_row P {
 .hero-banner-1 .banner_feature_card {
   position: absolute;
   right: 40%;
-  z-index: 999;
+  z-index: 990;
   bottom: 0px;
 }
 .hero-banner-1 .banner_feature_card img {
@@ -3137,12 +3137,13 @@ footer .copyright_row P {
   width: 64px;
 }
 .hero-banner-1 .icons img:nth-child(1) {
-  top: 88px;
-  right: 615px;
+  right: 15%;
+  top: 15%;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1799px) {
   .hero-banner-1 .icons img:nth-child(1) {
-    right: 505px;
+    right: 15%;
+    top: 15%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
@@ -3153,12 +3154,13 @@ footer .copyright_row P {
   }
 }
 .hero-banner-1 .icons img:nth-child(2) {
-  top: 120px;
-  right: 778px;
+    right: 35%;
+    top: 12%;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1799px) {
   .hero-banner-1 .icons img:nth-child(2) {
-    right: 668px;
+    right: 30%;
+    top: 12%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
@@ -3169,12 +3171,13 @@ footer .copyright_row P {
   }
 }
 .hero-banner-1 .icons img:nth-child(3) {
-  top: 195px;
-  right: 534px;
+    right: 10%;
+    top: 30%;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1799px) {
   .hero-banner-1 .icons img:nth-child(3) {
-    right: 424px;
+    right: 5%;
+    top: 30%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
@@ -3185,12 +3188,13 @@ footer .copyright_row P {
   }
 }
 .hero-banner-1 .icons img:nth-child(4) {
-  top: 215px;
-  right: 671px;
+    right: 45%;
+    top: 30%;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1799px) {
   .hero-banner-1 .icons img:nth-child(4) {
-    right: 561px;
+    right: 45%;
+    top: 30%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
@@ -4070,22 +4074,22 @@ footer .copyright_row P {
   width: 32px;
 }
 
-.courses-slider .course__card {
+.gallery-slider .gallery__card {
   margin: 0 12px;
   margin-bottom: 24px;
 }
 @media (max-width: 1199px) {
-  .courses-slider .course__card {
+  .gallery-slider .gallery__card {
     margin-bottom: 22px;
   }
 }
 @media (max-width: 991px) {
-  .courses-slider .course__card {
+  .gallery-slider .gallery__card {
     margin-bottom: 22px;
   }
 }
 @media (max-width: 767px) {
-  .courses-slider .course__card {
+  .gallery-slider .gallery__card {
     margin-bottom: 20px;
   }
 }
@@ -4531,7 +4535,7 @@ footer .copyright_row P {
   margin-bottom: 20px;
 }
 
-.courses-1 {
+.gallery-session {
   background: url(../media/backgrounds/courses-1.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -4545,21 +4549,21 @@ footer .copyright_row P {
   background-size: cover;
 }
 
-.course__card {
+.gallery__card {
   position: relative;
   padding-top: 32px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
-  .course__card {
+  .gallery__card {
     padding-top: 16px;
   }
 }
 @media (max-width: 767px) {
-  .course__card {
+  .gallery__card {
     padding-top: 16px;
   }
 }
-.course__card .course__card__icon {
+.gallery__card .gallery__card__icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -4567,20 +4571,20 @@ footer .copyright_row P {
   transition: all 0.5s ease;
 }
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
-  .course__card .course__card__icon {
+  .gallery__card .gallery__card__icon {
     width: 55px;
   }
 }
 @media (max-width: 767px) {
-  .course__card .course__card__icon {
+  .gallery__card .gallery__card__icon {
     width: 55px;
   }
 }
-.course__card:hover .course__card__icon {
+.gallery__card:hover .gallery__card__icon {
   transform: rotate(10deg);
   transition: all 0.5s ease;
 }
-.course__card .course__card__content {
+.gallery__card .gallery__card__content {
   margin: 0px 0 0 52px;
   position: relative;
   z-index: 5;
@@ -4589,78 +4593,90 @@ footer .copyright_row P {
   box-shadow: 2px 1px 5px 0px rgba(2, 69, 122, 0.04), 9px 4px 10px 0px rgba(2, 69, 122, 0.03), 19px 10px 13px 0px rgba(2, 69, 122, 0.02), 35px 17px 15px 0px rgba(2, 69, 122, 0.01), 54px 27px 17px 0px rgba(2, 69, 122, 0);
   display: flex;
   justify-content: space-between;
+  padding: 24px;
+}
+.gallery__card .gallery__card__content .gallery-img {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery__card .gallery__card__content .gallery-img img {
+  height: 100%;
+  width: auto;
 }
 @media only screen and (min-width: 1199px) and (max-width: 1400px) {
-  .course__card .course__card__content {
+  .gallery__card .gallery__card__content {
     margin-left: 26px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .course__card .course__card__content {
+  .gallery__card .gallery__card__content {
     flex-direction: column;
     margin-left: 26px;
     padding-left: 16px;
   }
 }
 @media (max-width: 767px) {
-  .course__card .course__card__content {
+  .gallery__card .gallery__card__content {
     flex-direction: column;
     margin-left: 26px;
     padding-right: 16px;
   }
 }
-.course__card .course__card__content .left__block {
+.gallery__card .gallery__card__content .left__block {
   position: relative;
   width: 100%;
   padding: 20px 0 39px 82px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
-  .course__card .course__card__content .left__block {
+  .gallery__card .gallery__card__content .left__block {
     padding-left: 40px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .course__card .course__card__content .left__block {
+  .gallery__card .gallery__card__content .left__block {
     padding-bottom: 0;
   }
 }
 @media (max-width: 767px) {
-  .course__card .course__card__content .left__block {
+  .gallery__card .gallery__card__content .left__block {
     padding-left: 40px;
     padding-bottom: 0;
   }
 }
-.course__card .course__card__content .left__block .course_tag {
+.gallery__card .gallery__card__content .left__block .course_tag {
   position: absolute;
   right: 8px;
   top: 32px;
 }
 @media (max-width: 360px) {
-  .course__card .course__card__content .left__block .course_tag {
+  .gallery__card .gallery__card__content .left__block .course_tag {
     display: none;
   }
 }
-.course__card .course__card__content .left__block .course_info {
+.gallery__card .gallery__card__content .left__block .course_info {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.course__card .course__card__content .left__block .course_info li {
+.gallery__card .gallery__card__content .left__block .course_info li {
   color: #7a8582;
   margin-left: 12px;
 }
-.course__card .course__card__content .left__block .course_info li:first-child {
+.gallery__card .gallery__card__content .left__block .course_info li:first-child {
   list-style: none;
   margin-left: 0;
 }
-.course__card .course__card__content .left__block .course_info li i {
+.gallery__card .gallery__card__content .left__block .course_info li i {
   color: #0aa6d7;
   margin-right: 8px;
 }
-.course__card .course__card__content .left__block .author_card {
+.gallery__card .gallery__card__content .left__block .author_card {
   position: relative;
 }
-.course__card .course__card__content .left__block .author_card .author_img {
+.gallery__card .gallery__card__content .left__block .author_card .author_img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4668,11 +4684,11 @@ footer .copyright_row P {
   border: 3px solid #0aa6d7;
 }
 @media (max-width: 767px) {
-  .course__card .course__card__content .left__block .author_card .author_img {
+  .gallery__card .gallery__card__content .left__block .author_card .author_img {
     width: 50px;
   }
 }
-.course__card .course__card__content .left__block .author_card .author_text_block {
+.gallery__card .gallery__card__content .left__block .author_card .author_text_block {
   margin-left: 22px;
   padding: 12px 24px 12px 64px;
   border-radius: 15px;
@@ -4680,17 +4696,17 @@ footer .copyright_row P {
   box-shadow: 2px 1px 5px 0px rgba(2, 69, 122, 0.04), 9px 4px 10px 0px rgba(2, 69, 122, 0.03), 19px 10px 13px 0px rgba(2, 69, 122, 0.02), 35px 17px 15px 0px rgba(2, 69, 122, 0.01), 54px 27px 17px 0px rgba(2, 69, 122, 0);
 }
 @media (max-width: 767px) {
-  .course__card .course__card__content .left__block .author_card .author_text_block {
+  .gallery__card .gallery__card__content .left__block .author_card .author_text_block {
     width: fit-content;
     padding: 8px 16px 8px 40px;
   }
 }
-.course__card .course__card__content .right__block {
+.gallery__card .gallery__card__content .right__block {
   text-align: center;
   position: relative;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .course__card .course__card__content .right__block {
+  .gallery__card .gallery__card__content .right__block {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -4698,14 +4714,14 @@ footer .copyright_row P {
   }
 }
 @media (max-width: 767px) {
-  .course__card .course__card__content .right__block {
+  .gallery__card .gallery__card__content .right__block {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
-.course__card .course__card__content .right__block::before {
+.gallery__card .gallery__card__content .right__block::before {
   content: "";
   position: absolute;
   left: 0;
@@ -4716,40 +4732,40 @@ footer .copyright_row P {
   transform: translate(-50%, -50%);
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .course__card .course__card__content .right__block::before {
+  .gallery__card .gallery__card__content .right__block::before {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  .course__card .course__card__content .right__block::before {
+  .gallery__card .gallery__card__content .right__block::before {
     display: none;
   }
 }
-.course__card .course__card__content .right__block .price_block {
+.gallery__card .gallery__card__content .right__block .price_block {
   position: relative;
   width: 165px;
   height: 165px;
 }
 @media only screen and (min-width: 1199px) and (max-width: 1400px) {
-  .course__card .course__card__content .right__block .price_block {
+  .gallery__card .gallery__card__content .right__block .price_block {
     width: 140px;
     height: 150px;
   }
 }
-.course__card .course__card__content .right__block .price_block .price_vector {
+.gallery__card .gallery__card__content .right__block .price_block .price_vector {
   position: absolute;
   right: 0;
   top: 0;
   z-index: 10;
 }
-.course__card .course__card__content .right__block .price_block span {
+.gallery__card .gallery__card__content .right__block .price_block span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
 }
-.course__card .course__card__content .bottom_vector {
+.gallery__card .gallery__card__content .bottom_vector {
   position: absolute;
   bottom: 0;
   right: 0;

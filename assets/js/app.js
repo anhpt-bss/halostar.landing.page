@@ -412,8 +412,8 @@
           ],
         });
       }
-      if ($(".courses-slider").length) {
-        $(".courses-slider").slick({
+      if ($(".gallery-slider").length) {
+        $(".gallery-slider").slick({
           slidesToShow: 3,
           slideToScroll: 1,
           arrows: false,
